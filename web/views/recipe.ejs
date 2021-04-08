@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Seasoning Printer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.5">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/stylesheets/recipe.css">
+
+  <!--밑줄 없애기-->
+  <style type="text/css">
+    a:link { color: black; text-decoration: none;}
+    a:visited { color: black; text-decoration: none;}
+    a:hover { color: black; text-decoration: none;}
+    img {
+        width:150px
+    }
+    #menu {
+        width: 70px;
+    }
+    #body {
+        height:200px;
+    }
+   </style>
+</head>
+<body>
+    <div id="body">
+        <div class="container bodered">
+            <table class="table table-hovered">
+              <thead>
+                <!--탭 네비게이션바-->
+                <tr class="tab">
+                  <th id="tab-text">
+                    <a href="/">
+                      <img src="\images\shopping-list.png" id="menu" alt="">
+                      <br>
+                      레시피
+                    </a>
+                    
+                  </th>
+                  <th id="tab-text">
+                    <a href="/add">
+                      <img src="\images\edit.png" id="menu" alt="">
+                      <br>
+                      레시피 수정
+                    </a>
+                  </th>
+                  <th id="tab-text">
+                    <a href="/storage">
+                      <img src="\images\wooden-box.png" id="menu" alt="">
+                      <br>
+                      재고상황
+                    </a>
+                    
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <!--컨테이너-->
+                <div class="container"> 
+                  <div class="row"> 
+                    <div class="col">
+    
+                    <!--레시피 목록들-->
+                    <div class="list-group">
+                      <a href="#" class="list-group-item list-group-item-action">
+                        <img src="\images\salmon-518032_1920.jpg" class="img-rounded"id="images"alt="">
+                        
+                        <form action="/num_recipe" method="POST">
+                        <!--리스트 안 텍스트-->  
+                        <h1 id="box-text"><%= recipe1 %><br>
+                          <!--레시피 자세히 보기-->
+                          <!-- <input type="submit" class="btn btn-light" id='recipe_button' value="레시피 자세히 보기"> -->
+                          <!-- <button class="btn btn-light" id="recipe-button" onclick="location.href='/view'">조미료 출력하기</button> -->
+                          <button class="btn btn-light" id="recipe-button" type="submit" value="1" name="num">조미료 출력하기</button>
+                        </h1>
+                        
+                      <a href="#" class="list-group-item list-group-item-action">
+                        <img src="\images\salmon-518032_1920.jpg" class="img-rounded" id="images"alt="">
+                        <!--리스트 안 텍스트--> 
+                        <h1 id="box-text"><%= recipe2 %><br>
+                           <!--레시피 자세히 보기-->
+                           <!-- <button class="btn btn-light" id="recipe-button" onclick="location.href='/view'">조미료 출력하기</button> -->
+                           <button class="btn btn-light" id="recipe-button" type="submit" value="2" name="num">조미료 출력하기</button>
+                          </h1>
+                        </h1>
+                      </a>
+                      <a href="#" class="list-group-item list-group-item-action">
+                        <img src="\images\salmon-518032_1920.jpg" class="img-rounded" id="images"alt="">
+                        <!--리스트 안 텍스트-->  
+                        <h1 id="box-text"><%= recipe3 %><br>
+                           <!--레시피 자세히 보기-->
+                           <!-- <button class="btn btn-light" id="recipe-button" onclick="location.href='/view'">조미료 출력하기</button> -->
+                           <button class="btn btn-light" id="recipe-button" type="submit" value="3" name="num">조미료 출력하기</button>
+                          </h1>
+                        </h1>
+                      </a>
+                      <a href="#" class="list-group-item list-group-item-action">
+                        <img src="\images\salmon-518032_1920.jpg" class="img-rounded" id="images"alt="">
+                        <!--리스트 안 텍스트-->  
+                        <h1 id="box-text"><%= recipe4 %><br>
+                           <!--레시피 자세히 보기-->
+                           <!-- <button class="btn btn-light" id="recipe-button" onclick="location.href='/view'">조미료 출력하기</button> -->
+                           <button class="btn btn-light" id="recipe-button" type="submit" value="4" name="num">조미료 출력하기</button>
+                          </h1>
+                        </h1>
+                      </form>
+                      </a>
+                    </div>
+                  </div> 
+                  <div class="row"> 
+                    <div class="col-3">
+    
+                    </div> 
+                    
+                  </div> 
+                </div>
+    
+              </tbody>
+            </table>
+          </div>
+    
+    </div>
+  <!--네비게이션 바-->
+</body>
+</html>

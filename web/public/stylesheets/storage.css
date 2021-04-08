@@ -1,0 +1,57 @@
+.container{
+    margin-top: 10px;
+    width:820px;
+    height:1200px;
+
+}
+
+/* #images{
+    width: 100px;
+} */
+
+#card-images{
+    width:40%;
+}
+
+#box-text{
+    font-size: 50px;
+    /* float:right; */
+    position: absolute;
+    top: 100px;
+}
+
+#box-inf{
+    font-size: 25px;
+    margin-left: 70px;
+}
+
+#danger-btn{
+    float:right;
+    font-size: 22px;
+    margin-top:40px; 
+}
+
+.tab{
+    font-size: 25px;
+    position: relative; 
+    z-index: 1;
+}
+
+.tbody{
+    position: relative; 
+    z-index: 2;
+}
+
+#tab-text{
+    text-align: center;
+    width:33%
+}
+
+#menubox{
+    margin:20px;
+    background-color: teal;
+    width: 720px;
+    height: 246px;
+    left: 40px;
+    top: 278px;
+}

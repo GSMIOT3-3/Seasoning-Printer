@@ -1,0 +1,67 @@
+.container{
+    margin-top: 10px;
+    width:820px;
+    height:1200px;
+
+}
+
+/* #images{
+    width:43%;
+    margin: 20px;
+} */
+
+#box-text{
+    font-size: 40px;
+    position: absolute;
+    top: 10px;
+    left: 200px;
+    /* float:right;
+    margin-right: 30px;
+    margin-top: 50px; */
+}
+
+#box-inf{
+    font-size: 28px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.tab{
+    font-size: 25px;
+    position: absolute;
+    top: 675px; 
+    left: 60px;
+    /* z-index: 1; */
+}
+
+.tbody{
+    position: relative; 
+    z-index: 2;
+}
+
+#tab-text{
+    text-align: center;
+    /* width:33% */
+}
+
+.text{
+    font-size:27px;
+    /* margin:25px; */
+}
+
+#menubox{
+    margin:20px;
+    background-color: teal;
+    width: 720px;
+    height: 246px;
+    left: 40px;
+    top: 278px;
+}
+
+#recipe-box{
+    position: absolute;
+    top: 160px;
+    height:500px;
+    width: 450px;
+}

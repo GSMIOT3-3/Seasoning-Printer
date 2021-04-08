@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Seasoning Printer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.5">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/stylesheets/view_recipe.css">
+
+  <!--밑줄 없애기-->
+  <style type="text/css">
+    a:link { color: black; text-decoration: none;}
+    a:visited { color: black; text-decoration: none;}
+    a:hover { color: black; text-decoration: none;}
+
+    img {
+        width: 150px;
+    }
+    
+    #menu {
+        width: 70px;
+    }
+   </style>
+</head>
+<body>
+  <!--네비게이션 바-->
+    <div class="container bodered">
+        <table class="table table-hovered">
+          <thead>
+            <!--탭 네비게이션바-->
+            <tr class="tab">
+              <th id="tab-text">
+                <a href="/">
+                  <img src="\images\shopping-list.png" id="menu" alt="">
+                  <br>
+                  레시피
+                </a>
+                
+              </th>
+              <th id="tab-text">
+                <a href="/add">
+                  <img src="\images\edit.png" id="menu" alt="">
+                  <br>
+                  레시피 수정
+                </a>
+              </th>
+              <th id="tab-text">
+                <a href="/storage">
+                  <img src="\images\wooden-box.png" id="menu" alt="">
+                  <br>
+                  재고상황
+                </a>
+                
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <!--컨테이너-->
+            <div class="container"> 
+              <div class="row"> 
+                <div class="col">
+
+                <!--레시피 목록들-->
+                <div class="list-group">
+                  <img src="\images\salmon-518032_1920.jpg" class="img-rounded" id="images"alt="">
+                  <h1 id="box-text">연어 스테이크<br> <p id="box-inf">열량 240kcal </p> <br>
+                  </h1>
+                  <div class="well" id="recipe-box">
+                    <p class="text">
+                        <%= content %>
+                    </p>  
+                </div>
+              </div> 
+              <div class="row"> 
+                <div class="col-3">
+
+                </div> 
+                
+              </div> 
+            </div>
+
+          </tbody>
+        </table>
+      </div>
+</body>
+</html>

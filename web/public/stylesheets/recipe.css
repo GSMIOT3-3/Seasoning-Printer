@@ -1,0 +1,67 @@
+
+.container{
+    margin-top: 10px;
+    width:820px;
+    height:1200px;
+
+}
+
+/* #images{
+    width:40%;
+    margin: 20px;
+} */
+
+#card-images{
+    width:40%;
+}
+
+#box-text{
+    font-size: 35px;
+    /* float:right; */
+    /* margin-right: 30px; */
+    /* margin-top: 50px; */
+    margin-left: 0px;
+    position: absolute;
+    left: 200px;
+    top: 7px;
+}
+
+#box-inf{
+    font-size: 25px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+#recipe-button{
+    /* float:right; */
+    font-size: 18px;
+}
+
+.tab{
+    font-size: 25px;
+    position: absolute;
+    top: 600px;
+    left: 65px;
+    /* z-index: 1; */
+    
+}
+
+.tbody{
+    position: relative; 
+    z-index: 2;
+}
+
+#tab-text{
+    text-align: center;
+    /* width:33% */
+}
+
+#menubox{
+    margin:20px;
+    background-color: teal;
+    width: 720px;
+    height: 246px;
+    left: 40px;
+    top: 278px;
+}
